@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Mackinac";
+    src: url("../public/fonts/Fontspring-DEMO-P22Mackinac-Book.otf");
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+    box-shadow: 3px 3px 10px 3px darkgray; 
+    background-color: white;
+    color: #3477eb;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-spacer {
+    height: 9vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-sentiment-explorer {
+    background-image: linear-gradient(rgba(52 119 235 / 20%), rgba(52 119 235 / 20%)), url("../public/sentiment-explorer-bg.jpg");
+    height: 60vh;
+    background-position: bottom;
+}
+
+.banner-explore-the-data {
+    background-image: linear-gradient(rgba(52 119 235 / 20%), rgba(52 119 235 / 20%)), url("../public/explore-data-bg.jpg");
+    height: 40vh;
+    background-position: center;
+}
+
+.banner-heading {
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.1rem;
+    width: 60%;
+    margin-block: 5rem;
+    margin-inline: auto; 
+}
+
+.description-paragraph {
+    margin-bottom: 2rem; 
+}
+
+.instructions {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3.25rem; 
+}
+
+#search {
+    padding: 1rem;
+    border: 1.5px solid #3477eb;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 1rem;
+    width: 50%; 
+}
+
+#submit {
+    padding: 1rem;
+    border: 1.5px solid #3477eb;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1rem;
+    background-color: #3477eb;
+    color: white;
+    font-weight: 500;
+}
+
+#submit:hover {
+    border: 1.5px solid #1e4b8f;
+    background-color: #1e4b8f;
+    cursor: pointer;          
+}
+
+.search-label {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.loading {
+    text-align: center;
+    margin-block: 11.5rem;
+}
+
+.error-message {
+    text-align: center; 
+    width: 50%;
+    margin: 11.5rem auto; 
+}
+
+.query {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.analysis {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.analysis-bar {
+    display: flex;
+    width: 60%;
+}
+
+.analysis-bar-sections {
+    height: 3.5rem;
+}
+
+.analysis-bar-section1 {
+    background-color: rgb(34 197 94);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.analysis-bar-section2 {
+    background-color: rgb(239 68 68);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.numbers-outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-inner-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.color-number-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.red-color-number-container {
+    margin-top: 0.25rem;
+    margin-bottom: 5rem; 
+}
+
+.numbers {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.green {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgb(34 197 94);
+    border-radius: 50%;
+}
+
+.red {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgb(239 68 68);
+    border-radius: 50%;
+}
+
+
+.footer {
+    margin-top: 0;
+    padding: 50px 60px 50px 50px;
+    height: 25vh; 
+    background-color: #3477eb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-credit {
+    text-align: center;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3rem; 
+}
+
+.footer-header {
+    font-size: 1.1rem;
+}
+
+.footer-body {
+    margin-top: 0;
+}
+
+.footer-code-header {
+    margin-top: 0;
+}
+
+.footer-code-body {
+    overflow: hidden;
+}
+
+.underline {
+    text-decoration: underline;
+}
+  
