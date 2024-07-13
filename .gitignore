@@ -16,6 +16,7 @@
 /build
 
 # misc
+/api/sentiment_analysis_model_tf
 .DS_Store
 *.pem
 
