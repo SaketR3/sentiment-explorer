@@ -48,11 +48,11 @@ export default function Home() {
           and surveys out there, they are far from comphrehensive.
         </p>
         <p className='description-paragraph'>
-          We need a simple way to gage people's opinions on issues. Knowing what people think of issues such as climate change, economic policies, 
+          We need a simple way to gage people's opinions on issues. Knowing what people think of issues such as the environment, economic policies, 
           and civil rights can have important implications for policymakers, interest groups, and others.
         </p>
         <p className='description-paragraph'>
-          That's where Sentiment Explorer comes in. With Sentiment Explorer, you can search for <em>any</em> topic you want. When you search for a topic, 
+          That's where Sentiment Explorer comes in. With Sentiment Explorer, you can search for <em>any</em> topic that you want (example: climate change). When you search for a topic, 
           Sentiment Explorer combs through a dataset of nearly 550,000 tweets posted during 2022 and finds tweets with your search term. A sentiment 
           analysis model that makes use of a recurrent neural network (RNN) then analyzes the relevant tweets and displays how people feel about the topic. 
         </p>
