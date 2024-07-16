@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import flask_cors
 from flask_cors import CORS
 import tensorflow as tf 
 import pandas as pd 
@@ -9,10 +8,9 @@ app = Flask(__name__)
 CORS(app)
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
-
-
 model_file_path = os.path.join(script_dir, 'sentiment_analysis_model_tf')
 data_file_path = os.path.join(script_dir, 'cleaned_2022_twitter_data.csv')
+
 model = tf.keras.models.load_model(model_file_path)
 data = pd.read_csv(data_file_path)     
 
