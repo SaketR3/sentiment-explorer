@@ -1,5 +1,6 @@
 numpy==1.24.3
 Flask==3.0.3
 flask_cors==4.0.1
-tensorflow
+tensorflow==2.15.0
 pandas
+gunicorn
